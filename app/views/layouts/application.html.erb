@@ -10,8 +10,11 @@
   </head>
 
   <body>
+    <nav class="navbar">
+      <%= link_to "See all restaurants", restaurants_path, class: "btn btn-primary" %>
+      <%= link_to "Add restaurant", new_restaurant_path, class: "btn btn-success" %>
+    </nav>
     <div class="container">
-      <%= link_to "Add restaurant", new_restaurant_path %>
       <%= yield %>
     </div>
   </body>
