@@ -10,6 +10,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= link_to "Add restaurant", new_restaurant_path %>
+      <%= yield %>
+    </div>
   </body>
 </html>
